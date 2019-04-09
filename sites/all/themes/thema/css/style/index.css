@@ -1,0 +1,1565 @@
+
+
+/*****************************
+******************************
+******************************
+******************************
+ * Reset CSS styles. - - start
+******************************
+******************************
+******************************
+******************************/
+
+/**
+ * Based on Eric Meyer's "Reset CSS 1.0" tool from
+ * http://meyerweb.com/eric/tools/css/reset
+ */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+input,
+select,
+textarea,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+/* Drupal: system-menus.css */
+td.menu-disabled,
+ul.links,
+ul.links.inline,
+ul.links li,
+.block ul,
+/* Drupal: admin.css */
+div.admin,
+/* Drupal: system.css */
+tr.even,
+tr.odd,
+tr.drag,
+tbody,
+tbody th,
+thead th,
+.breadcrumb,
+.item-list .icon,
+.item-list .title,
+.item-list ul,
+.item-list ul li,
+ol.task-list li.active,
+.form-item,
+tr.odd .form-item,
+tr.even .form-item,
+.form-item .description,
+.form-item label,
+.form-item label.option,
+.form-checkboxes,
+.form-radios,
+.form-checkboxes .form-item,
+.form-radios .form-item,
+.marker,
+.form-required,
+.more-link,
+.more-help-link,
+.item-list .pager,
+.item-list .pager li,
+.pager-current,
+.tips,
+ul.primary,
+ul.primary li,
+ul.primary li a,
+ul.primary li.active a,
+ul.primary li a:hover,
+ul.secondary,
+ul.secondary li,
+ul.secondary a,
+ul.secondary a.active,
+.resizable-textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+/* Drupal: system-menus.css */
+ul.links,
+ul.links.inline,
+ul.links li,
+.block ul,
+ol,
+ul,
+.item-list ul,
+.item-list ul li {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* Remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+
+/* Tables still need 'cellspacing="0"' in the markup. */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**
+ * Font reset.
+ *
+ * Specifically targets form elements which browsers often times give
+ * special treatment.
+ */
+input,
+select,
+textarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+textarea {
+  font-size: 1em;
+  line-height: 1.538em;
+}
+/**
+ * Markup free clearing.
+ *
+ * Consider adding your own selectors to this instead of finding ways
+ * to sneak the clearfix class into Drupal's markup.
+ * From http://perishablepress.com/press/2009/12/06/new-clearfix-hack
+ */
+ul.links:after,
+div.admin-panel .body:after,
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* Exclude inline links from clearfix behavior */
+ul.inline:after {
+  content: "";
+  display: none;
+  clear: none;
+}
+/* IE6 */
+* html .form-item,
+* html ul.links,
+* html div.admin-panel .body,
+* html .clearfix {
+  height: 1%;
+}
+/* IE7 */
+*:first-child + html .form-item,
+*:first-child + html ul.links,
+*:first-child + html div.admin-panel .body,
+*:first-child + html .clearfix {
+  min-height: 1%;
+}
+
+
+
+/*****************************
+******************************
+******************************
+******************************
+ * Reset CSS styles. - - end
+******************************
+******************************
+******************************
+******************************/
+
+
+
+
+/*****************************
+******************************
+******************************
+******************************
+ * sevenstyle.css - - start
+******************************
+******************************
+******************************
+******************************/
+
+/**
+ * Generic elements.
+ */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin: 10px 0;
+}
+h1 {
+  font-size: 1.538em;
+}
+h2 {
+  font-size: 1.385em;
+}
+h3 {
+  font-size: 1.231em;
+}
+h4 {
+  font-size: 1.154em;
+}
+h5,
+h6 {
+  font-size: 1.077em;
+}
+p {
+  margin: 1em 0;
+}
+
+
+
+/**
+ * Tables.
+ */
+table {
+  width: 100%;
+  font-size: 0.923em;
+  margin: 0 0 10px;
+  border: 1px solid #bebfb9;
+}
+table td,
+table th {
+  vertical-align: middle;
+  padding: 8px 10px;
+  border: 0;
+  color: #000;
+}
+tr.even,
+tr.odd {
+  border-width: 0 1px 0 1px;
+  border-style: solid;
+  border-color: #bebfb9;
+  background: #f3f4ee;
+}
+tr.odd {
+  background: #fff;
+}
+tr.drag {
+  background: #fe7;
+}
+tr.drag-previous {
+  background: #ffb;
+}
+table th {
+  background: #e1e2dc;
+  font-weight: normal;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #bebfb9;
+  padding: 3px 10px;
+}
+/**
+ * Force browsers to calculate the width of a 'select all' TH element.
+ */
+table th.select-all {
+  width: 1px;
+}
+table th.active {
+  background: #bdbeb9;
+}
+table th a {
+  display: block;
+  position: relative;
+}
+table th.active a {
+  padding: 0 25px 0 0; /* LTR */
+}
+table th.active img {
+  position: absolute;
+  top: 3px;
+  right: 3px; /* LTR */
+}
+table td.active {
+  background: #e9e9dd;
+}
+table tr.odd td.active {
+  background: #f3f4ee;
+}
+table tr.selected td.active,
+table tr.selected td {
+  background: #ffc;
+  border-color: #eeb;
+}
+table.system-status-report tr {
+  border-bottom: 1px solid #ccc;
+}
+table.system-status-report tr.ok {
+  color: #255b1e;
+  background-color: #e5ffe2;
+}
+table.system-status-report tr.info {
+  color: #040f37;
+  background-color: #bdf;
+}
+table.system-status-report tr.warning {
+  color: #840;
+  background-color: #fffce5;
+}
+table.system-status-report tr.error {
+  color: #8c2e0b;
+  background-color: #fef5f1;
+}
+/**
+ * Exception for webkit bug with the right border of the last cell
+ * in some tables, since it's webkit only, we can use :last-child
+ */
+tr td:last-child {
+  border-right: 1px solid #bebfb9; /* LTR */
+}
+
+
+/**
+ * Fieldsets.
+ *
+ * Fieldset legends are displayed like containers in Seven. However, several
+ * browsers do not support styling of LEGEND elements. To achieve the desired
+ * styling:
+ * - All fieldsets use 'position: relative'.
+ * - All legend labels are wrapped in a single span.fieldset-legend that uses
+ *   'position: absolute', which means that the LEGEND element itself is not
+ *   rendered by browsers.
+ * - Due to using 'position: absolute', collapsed fieldsets do not have a
+ *   height; the fieldset requires a 'padding-top' to make the absolute
+ *   positioned .fieldset-legend appear as though it would have a height.
+ * - Various browsers are positioning the legend differently if there is a
+ *   'padding-left'/'padding-right' applied on a fieldset and inherit the
+ *   positioning even to absolute positioned elements within; we therefore have
+ *   to apply all padding to the inner .fieldset-wrapper instead.
+ */
+fieldset {
+  border: 1px solid #ccc;
+  padding: 2.5em 0 0 0; /* LTR */
+  position: relative;
+  margin: 1em 0;
+}
+fieldset .fieldset-legend {
+  margin-top: 0.5em;
+  padding-left: 15px; /* LTR */
+  position: absolute;
+}
+fieldset .fieldset-wrapper {
+  padding: 0 13px 13px 15px; /* LTR */
+}
+fieldset.collapsed {
+  background-color: transparent;
+}
+html.js fieldset.collapsed {
+  border-width: 1px;
+  height: auto;
+}
+fieldset fieldset {
+  background-color: #fff;
+}
+fieldset fieldset fieldset {
+  background-color: #f8f8f8;
+}
+
+
+/**
+ * Form elements.
+ */
+.form-item {
+  padding: 0px 0;
+  margin: 0 0 0px;
+}
+.filter-wrapper .form-item,
+div.teaser-checkbox .form-item,
+.form-item .form-item {
+  padding: 5px 0;
+  margin: 0;
+  border: 0;
+}
+.form-type-checkbox {
+  padding: 0;
+}
+.text-format-wrapper .form-item {
+  padding-bottom: 0;
+}
+.form-item label {
+  margin: 0;
+  padding: 0;
+}
+.form-item label.option {
+  font-size: 0.923em;
+}
+.form-item label.option input {
+  vertical-align: middle;
+}
+.form-disabled input.form-autocomplete,
+.form-disabled input.form-text,
+.form-disabled input.form-file,
+.form-disabled textarea.form-textarea,
+.form-disabled select.form-select {
+  background-color: #eee;
+  color: #777;
+}
+
+/* Filter */
+.filter-wrapper {
+  border-top: 0;
+  padding: 10px 2px;
+}
+.filter-wrapper .fieldset-wrapper {
+  padding: 0 6px;
+}
+.filter-wrapper .form-item,
+.filter-wrapper .filter-guidelines,
+.filter-wrapper .filter-help {
+  font-size: 0.923em;
+  padding: 2px 0 0 0; /* LTR */
+}
+ul.tips,
+div.description,
+.form-item div.description {
+  margin: 5px 0;
+  line-height: 1.231em;
+  font-size: 0.923em;
+  color: #666;
+}
+ul.tips li {
+  margin: 0.25em 0 0.25em 1.5em; /* LTR */
+}
+body div.form-type-radio div.description,
+body div.form-type-checkbox div.description {
+  margin-left: 1.5em; /* LTR */
+}
+input.form-submit,
+a.button {
+  cursor: pointer;
+  padding: 4px 17px;
+  margin-bottom: 1em;
+  margin-right: 1em; /* LTR */
+  color: #5a5a5a;
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.077em;
+  font-family: "Lucida Grande", Verdana, sans-serif;
+  border: 1px solid #e4e4e4;
+  border-bottom: 1px solid #b4b4b4;
+  border-left-color: #d2d2d2;
+  border-right-color: #d2d2d2;
+  background: url(../../images/buttons/index.png) 0 0 repeat-x;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+a.button:link,
+a.button:visited,
+a.button:hover,
+a.button:active {
+  text-decoration: none;
+  color: #5a5a5a;
+}
+input.form-submit:active {
+  background: #666;
+  color: #fff;
+  border-color: #555;
+  text-shadow: #222 0 -1px 0;
+}
+input.form-button-disabled,
+input.form-button-disabled:active {
+  background: #eee none;
+  border-color: #eee;
+  text-shadow: none;
+  color: #999;
+}
+input.form-autocomplete,
+input.form-text,
+input.form-file,
+textarea.form-textarea,
+select.form-select {
+  padding: 2px;
+  border: 1px solid #ccc;
+  border-top-color: #999;
+  background: #fff;
+  color: #333;
+}
+input.form-text:focus,
+input.form-file:focus,
+textarea.form-textarea:focus,
+select.form-select:focus {
+  color: #000;
+  border-color: #ace;
+}
+
+ul.action-links {
+  margin: 1em 0;
+  padding: 0 20px 0 20px; /* LTR */
+  list-style-type: none;
+  overflow: hidden;
+}
+ul.action-links li {
+  float: left; /* LTR */
+  margin: 0 1em 0 0; /* LTR */
+}
+ul.action-links a {
+  padding-left: 15px; /* LTR */
+  background: transparent url(../../images/add/index.png) no-repeat 0 center;
+  line-height: 30px;
+}
+
+/* Exceptions */
+#diff-inline-form select,
+div.filter-options select {
+  padding: 0;
+}
+
+
+/*****************************
+******************************
+******************************
+******************************
+ * sevenstyle.css - - end
+******************************
+******************************
+******************************
+******************************/
+
+
+
+/*****************************
+******************************
+******************************
+******************************
+ * regions.css - - start
+******************************
+******************************
+******************************
+******************************/
+
+
+
+/*****
+* To stadar plaisio
+*
+* background-color: #eaeaea;
+* background-color: #f4f4f4;
+* background-color: #FFFFFF;
+*
+* Προστέθηκαν και όλες οι φόρμες 
+* με τα .node-form .form-region-right .form-region-main
+*
+******/
+
+/*****
+* body {font-family: 'Roboto', sans-serif;}
+******/
+
+
+
+
+body {
+font: normal 81.3%/1.538em "Roboto", sans-serif;
+font-size: 14px;
+background-color: #eaeaea;
+}
+
+
+.zoni-header {
+width: 100%;
+margin: 0 auto;
+color: #FFFFFF;
+background: #000000;
+}
+
+.background {
+width: 960px;
+margin: 0 auto;
+background-color: #f4f4f4;
+}
+
+.background .background {
+background-color: black;
+}
+
+.node-form {
+width: 98%;
+margin: 0 auto;
+}
+
+
+
+
+.zoni960,
+.zoni100pc {
+width: 944px;
+margin: 0 auto;
+padding: 0 8px;
+clear: both;
+}
+
+.zoni336,
+.zoni30pc {
+width: 336px;
+padding-left: 8px;
+float: right;
+}
+
+.zoni608, 
+.zoni70pc {
+width: 576px;
+padding: 0 20px 0 4px;
+float: left;
+}
+
+
+.header1 {
+width:960px;
+margin: 0 auto;
+}
+
+
+.header2 {
+}
+
+.header3 {
+}
+
+
+.stili {
+}
+
+.region1 {
+}
+
+.region10 {
+}
+
+.region11 {
+}
+
+.region12 {
+}
+
+.region20 {
+}
+
+.region21 {
+}
+
+.region22 {
+}
+
+.region30 {
+}
+
+.footer1 {
+}
+
+.footer2 {
+}
+
+
+/*****************************
+******************************
+******************************
+******************************
+ * regions.css - - end
+******************************
+******************************
+******************************
+******************************/
+
+
+
+/*****************************
+******************************
+******************************
+******************************
+ * style.css thema - - start
+******************************
+******************************
+******************************
+******************************/
+
+
+
+/* Όλα τα λινκ */
+
+
+/* mydate  icon  temp  thess */
+
+/* Ημερομηνία */
+
+
+.header1 .mydate {
+text-align: left;
+padding-left: 2px;
+}
+
+
+.header1 .eesth {
+margin-left: 24%;
+font-family: 'Roboto Condensed', sans-serif;
+font-weight: bold;
+}
+
+.header1 .thess,
+.header1 .temp,
+.header1 .icon {
+float: right;}
+
+.header1 .icon img {
+float: right;
+width: 32px;
+height: 20px;}
+
+.header1 .temp {
+padding-right: 2px;
+}
+
+
+/* header2 ad img */
+
+.header2 img {
+display: block;
+margin: 0 auto;
+}
+
+/* Λογότυπο sto header3 */
+
+
+.zoni960 .header3 {
+display: inline-block;
+width: 944px;
+height: 50px;
+background: #000000;
+}
+
+.zoni960 .header3 .logo {
+float: left;
+clear: left;
+width: 216px;
+height: 40px;
+margin-top: 10px;
+background-color: black;
+text-align: center;
+}
+
+.zoni960 .header3 .logo a, 
+.zoni960 .header3 .logo a:visited, 
+.zoni960 .header3 .logo a:hover, 
+.zoni960 .header3 .logo a:active {
+color: white;
+text-decoration: none;
+}
+
+
+.zoni960 .header3 .logo .logo1 {
+font-family: 'Rubik One', sans-serif;
+font-size: 36px;
+}
+
+
+
+
+/* Μενού */
+
+
+
+.zoni960 .header3 .view-mymenus .view-display-id-mymenu {
+float: right;
+clear: right;
+width: 728px;
+}
+
+.zoni960 .header3 .view-display-id-mymenu .emptydiv {
+float: left;
+width: 100%;
+height: 14px;
+}
+
+
+.zoni960 .header3 .view-display-id-mymenu .vwrapper .vrow {
+display: inline-block;
+font-size: 14px;
+font-weight: bold;
+}
+
+.zoni960 .header3 .view-display-id-mymenu .vwrapper .vrow:nth-child(1) {
+margin-left: 16px;
+}
+
+.zoni960 .header3 .view-display-id-mymenu .vwrapper .vrow a {
+background-color: black;
+color: white;
+padding: 4px 10px;
+text-decoration: none;
+}
+
+.zoni960 .header3 .view-display-id-mymenu .vwrapper .vrow a:hover,
+.zoni960 .header3 .view-display-id-mymenu .vwrapper .vrow a.active {
+border-bottom: 2px solid #ffffff;
+}
+
+
+
+
+
+
+
+/*************
+*
+* Πρωτοσέλιδο 
+*
+**************/
+
+
+/* Πρώτο θέμα */
+
+
+.region1 .wkatigories,
+.region1 .writers,
+.region10 .view-myfront .wa,
+.region20 .view-myfront .wb,
+.region30 .view-myfront .wc {
+text-align: justify;
+width: 576px;
+margin-top: 20px;
+border-top: 1px solid #808080;
+word-wrap: break-word;
+}
+
+.region20 .view-myfront .wb .views-field-title {
+text-align: left;
+}
+
+
+.view-myfront .wc {
+border-bottom: 1px solid #808080;
+margin-bottom: 12px;
+}
+
+a, a:visited, a:active {
+color: black;
+text-decoration: none;
+}
+
+a:hover {
+color: #808080;
+text-decoration: none;
+}
+
+
+
+
+.region1 .wkatigories .rkatigories,
+.region1 .writers .writersrow,
+.view-myfront .rb {
+width: 576px;
+height: 170px;
+padding: 20px 0;
+border-bottom: 1px solid #808080;
+position: relative;
+}
+
+.region1 .wkatigories .rkatigories .views-field-field-katigoria,
+.region1 .writers .writersrow .views-field-field-katigoria,
+.view-myfront .rb .views-field-field-katigoria {
+text-align: right;
+font-size: 0.8em;
+font-weight: bold;
+position: absolute;
+right: 0px;
+bottom: 20px;
+}
+
+
+
+.region1 .wkatigories img,
+.region1 .writers img,
+.region20 .view-myfront img  {
+width: 284px;
+height: auto;
+float: left;
+margin: 0px 2px;
+}
+
+
+/*  - Myfronta test ola douleuoun tha allakso kai ta palia */
+
+
+
+
+.wkatigories .views-field-field-katigoria a:hover,
+.writers .views-field-field-katigoria a:hover,
+.view-myfront .views-field-field-katigoria a:hover {
+color: black;
+}
+
+.wkatigories .views-field-field-katigoria,
+.writers .views-field-field-katigoria,
+.view-myfront .views-field-field-katigoria {
+text-align: right;
+font-size: 0.8em;
+font-weight: bold;
+}
+
+
+.wkatigories .views-field-title,
+.writers .views-field-title,
+.view-myfront .wb .views-field-title {
+width: 284px;
+float: right;
+max-height: 44%;
+overflow: hidden;
+}
+
+
+.wkatigories .views-field-field-subtitle,
+.writers .views-field-field-subtitle,
+.view-myfront .wb .views-field-field-subtitle {
+width: 284px;
+float: right;
+max-height: 40%;
+overflow: hidden;
+}
+
+
+
+
+/* stili */
+
+.zoni336 .stili .view-header li,
+.zoni336 .stili .view-display-id-smlinks li,
+.zoni336 .stili .view-display-id-allodaposlogoimg .view-content li,
+.zoni336 .stili .view-display-id-horizonlevante li {
+border: none;
+}
+
+.zoni336 .stili li,
+.zoni336 .stili .view-footer .view-display-id-allodapos li {
+padding: 6px 0;
+border-bottom: 1px dotted;
+}
+
+.zoni336 .stili img {
+width: 336px;
+height: auto;
+}
+
+/* protoselida efimeridon */
+
+
+.zoni336 .stili .view-header, 
+.zoni336 .stili .view-header a, 
+.zoni336 .stili .view-header a:visited, 
+.zoni336 .stili .view-header a:hover, 
+.zoni336 .stili .view-header a:active {
+width: 332px;
+text-align: center;
+color: white;
+background-color: black;
+border-radius: 4px 4px 4px 4px;
+border-color:transparent;
+margin: 12px 2px 0;
+font-weight: bold;
+}
+
+
+.protes {
+width: 332px;
+border: 1px solid #808080;
+border-radius: 4px 4px 4px 4px;
+}
+
+
+.protes img {
+display: block;
+margin: 4px auto;
+height: 400px;
+width: auto;
+}
+
+
+
+/* monkeybros - ex allodapos */
+
+
+.zoni336 .stili .view-display-id-monkeybros img {
+border: 1px solid black;
+width: 330px;
+height: auto;
+margin: 0 auto;
+}
+
+.zoni336 .stili .view-display-id-knews,
+.zoni336 .stili .view-display-id-ktags,
+.zoni336 .stili .vwrapper {
+width: 330px;
+margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+/**********************
+*
+* frontpage-manager 
+*
+***********************/
+
+
+
+.view-frontb .view-content {
+background-color: #F6F6F6;
+border: 1px solid #ccc;
+margin-top: 2px;
+}
+
+
+
+.zoni30pc .stili .view-header {
+width: 328px;
+color: white;
+background-color: black;
+border-radius: 4px 4px 4px 4px;
+border-color:transparent;
+margin: 12px 2px 0;
+padding: 0 2px;
+font-size: 14px;
+font-weight: bold;
+}
+
+.float-left {float: left;}
+.float-right {float: right;}
+
+
+.editlink {
+margin-right: 10px;
+}
+
+
+.zoni70pc .view-frontb .form-submit {
+margin-top: 12px;
+}
+
+
+
+.zoni70pc .view-frontb .view-header {
+width: 568px;
+clear: both;
+font-size: 14px;
+font-weight: bold;
+color: white;
+background-color: black;
+border-radius: 4px 4px 4px 4px;
+border-color:transparent;
+margin: 12px 2px 0;
+padding: 0 2px;
+}
+
+.view-frontb .view-header .row1 {
+border-bottom: 1px solid #ccc;
+text-align: center;
+}
+
+.zoni70pc .view-frontb .vrow {
+width: 572px;
+border: 1px solid #808080;
+}
+
+.zoni70pc .view-frontb span.titlos {
+display: inline-block;
+width: 488px;
+overflow: hidden !important;
+white-space: nowrap;
+text-overflow: ellipsis;
+}
+
+
+
+.zoni70pc .region10 .view-display-id-bkentriko .vrow:nth-child(6) {
+border-bottom: 2px solid #808080;
+margin-bottom: 40px;
+}
+
+
+
+
+.zoni70pc .region10 .view-display-id-bkentriko .vrow:nth-child(1n) .flag-wrapper {
+display: none;
+}
+
+.zoni70pc .region10 .view-display-id-bkentriko .vrow:nth-child(1n+7) .flag-wrapper {
+display: inline;
+}
+
+.zoni70pc .region10 .view-display-id-bkentriko .vrow:nth-child(1n+7) {
+border: 1px solid red;
+}
+
+.zoni70pc .region10 .view-display-id-bkentriko .vrow:nth-child(7) {
+border-top: 2px solid red;
+}
+
+.zoni70pc .region10 .view-display-id-bkentriko .vrow:nth-child(10) {
+border-bottom: 2px solid red;
+}
+
+.zoni30pc .stili .view-frontb .vrow {
+width: 332px;
+border: 1px solid #808080;
+}
+
+
+.zoni30pc .stili .view-frontb span.titlos {
+display: inline-block;
+width: 250px;
+overflow:hidden !important;
+white-space:nowrap;
+text-overflow:ellipsis;
+}
+
+
+.flag-wrapper {
+font-size: 20px;
+font-weight: bold;
+}
+
+
+
+
+
+
+/* forma keimenou */
+
+.form-item-field-video-und label.option,
+.form-item-field-publish-unpublish-date-und label.option {
+font-weight: bold;
+margin-left: 10px;
+}
+
+
+.form-region-main,
+.form-region-right {
+background-color: #F6F6F6;
+border: 1px solid #ccc;
+margin-top: 12px;
+}
+
+.form-region-main .form-item,
+.form-region-right .form-item {
+margin: 0 2%;
+}
+
+
+.field-name-field-image,
+.field-name-field-video,
+.field-name-field-profile-reference,
+.field-name-field-publish-unpublish-date {
+margin-top: 20px;
+padding-top: 8px;
+border-top: 1px solid #ccc;
+}
+
+.field-name-field-image input.form-file,
+.field-name-field-image input#edit-field-image-und-0-upload-button,
+.field-name-field-image span.file,
+.field-name-field-image span.file-size,
+.field-name-field-image .description {
+display: none;
+}
+
+
+input#edit-title-field-und-0-value,
+input#edit-title-field-el-0-value {
+width: 50%;
+}
+
+input#edit-field-subtitle-und-0-value,
+input#edit-field-tags-und {
+width: 60%;
+}
+
+input#edit-field-profile-reference-und-0-target-id,
+.form-item-field-youtube-und-0-value .form-text {
+width: 98%;
+}
+
+
+
+
+.field-name-field-streaming {
+margin-top: 10px;
+}
+
+/* SOS input#edit-field-multimedia-und---3, input#edit-field-multimedia-und---3 + label {timi} */
+
+
+.zoni100pc fieldset#edit-body-und-0-format {
+display: none;
+}
+
+/* ERT1 ert1 - krivei tin epilogi ert1 dioti h anametadotisi diakopike */
+
+input#edit-field-streaming-und-ert-1-live,
+input#edit-field-streaming-und-ert-1-live + label {
+display: none;
+}
+
+/* periexomena */
+
+.view-contentb .views-exposed-form {
+margin-top: 12px;
+padding-left: 15px;
+border: 1px solid;
+border-color: #ccc;
+background-color: #F6F6F6;
+}
+
+
+
+.view-contentb .views-widget-filter-uid_1 .form-autocomplete,
+.view-contentb .views-widget-filter-uid_1 .description {
+width: 200px;
+}
+
+
+.view-contentb #edit-select {
+background-color: #F6F6F6;
+}
+
+
+.zoni100pc .tabs {
+display: none;}
+
+
+/* Keimena */
+
+.zoni608 .view-display-id-ktitlos,
+.zoni608 .view-display-id-kimage,
+.zoni608 .view-display-id-kmediaplayer,
+.zoni608 .view-display-id-kvouli,
+.zoni608 .view-display-id-kinfo,
+.zoni608 .view-display-id-kkeimeno {
+margin-top: 20px;
+border-top: 1px solid #808080;
+clear: both;
+}
+
+.view-display-id-kinfo .views-field-field-katigoria .field-content, 
+.view-display-id-kinfo .views-field-title span.field-content {
+font-size: 14px;
+font-weight: bold;
+}
+
+.view-display-id-kinfo .views-field-field-image img {
+width: 7%;
+height: auto;
+float: left;
+padding-right: 10px;
+}
+
+.easy_social-widget-facebook {
+width: 180px !important;
+}
+
+.view-display-id-kinfo .views-field-created,
+.view-display-id-kinfo .views-field-timestamp, 
+.view-keimena .views-field-easy-social,
+.view-keimena .views-field-nothing {
+float: right;
+clear: right;
+}
+
+.view-display-id-kinfo .views-field-easy-social,
+.view-keimena .views-field-nothing {
+padding-top: 10px;
+}
+
+.view-display-id-kinfo .views-field-title {
+width: 300px;
+padding-top: 26px;
+}
+
+.view-keimena .views-field-body {
+text-align: justify;
+}
+
+.zoni608 .view-keimena .views-field-body img {
+display: block;
+max-width: 576px;
+height: 324px;
+margin: 0 auto;
+}
+
+.views-field-field-tags {
+margin-top: 12px;
+border-top: 1px solid #808080;
+}
+
+.view-display-id-kkeimeno .views-field-easy-social {
+padding-top: 8px;
+}
+
+
+
+/* Social Links - smlinks */
+
+
+.zoni336 .stili {
+margin-top: 12px;
+}
+
+.stili .view-display-id-smlinks {
+text-align: center;
+}
+
+
+.stili .view-display-id-smlinks a {
+font-size: 6px;
+margin-right: 10px;
+}
+
+
+
+
+
+
+
+/* user page */
+
+
+.header3 .views-field-name,
+.header3 .views-field-nothing-1,
+.header3 .views-field-nothing-2 {
+float: right;
+padding-left: 10px;
+font-weight: bold;
+}
+
+.page-user-edit .form-item-name {
+display: none;
+}
+
+.view-display-id-inboxmail {
+border: 1px solid #bebfb9;
+}
+
+/* selides */
+
+
+.region1 .view-display-id-writer {
+width: 576px;
+height: 60px;
+margin-top: 12px;
+}
+
+.region1 .view-display-id-writer .views-field-title {
+font-weight: bold;
+}
+
+.view-selides .view-header {
+clear: both;
+}
+
+.view-selides .view-display-id-writer img {
+width: 7%;
+height: auto;
+padding-right: 10px;
+float: left;
+}
+
+
+/* selides sxolia */
+
+
+.zoni608 .view-display-id-katigoriasxolia {
+margin: 20px 0;
+border-bottom: 1px solid #808080;
+}
+
+.zoni608 .view-display-id-katigoriasxolia .wkatigoriasxolia h3 {
+text-align: center;
+border-top: 1px solid #808080;
+padding-top: 12px;
+}
+
+.zoni608 .view-display-id-katigoriasxolia .wkatigoriasxolia li {
+text-align: justify;
+border-top: 1px dotted #808080;
+}
+
+
+
+/* feed - default = 608X342  .view-display-id-pictureoftheday */
+
+
+
+
+
+.zoni608 .view-display-id-pictureoftheday {
+width: 574px;
+border: 1px solid #808080;
+border-radius: 4px 4px 4px 4px;
+}
+
+
+.zoni608 .view-display-id-pictureoftheday img {
+display: block;
+margin: 4px auto;
+max-width: 574px;
+max-height: 322px;
+}
+
+
+
+/* allodapos selida */
+
+
+
+
+/* horizon levante */
+
+.view-display-id-horizonlevante img {
+border: 1px solid black;
+}
+
+
+.stili {
+width: 334px;
+text-align: justify;
+word-wrap: break-word;
+}
+
+
+
+/* footer1 */
+
+.footer1 .view-display-id-myfooter,
+.footer1 .view-display-id-myfooter a,
+.footer1 .view-display-id-myfooter a:hover,
+.footer1 .view-display-id-myfooter a:visited,
+.footer1 .view-display-id-myfooter a:active {
+color: white;
+}
+
+.emptyspaceonfooter {
+width: 100%;
+height: 30px;
+}
+
+.footer1 .view-display-id-myfooter .views-field-nothing-1,
+.footer1 .view-display-id-myfooter .views-field-nothing-2,
+.footer1 .view-display-id-myfooter .views-field-nothing-3 {
+display: inline-block;
+}
+
+.footer1 .view-display-id-myfooter .views-field-nothing-1 {
+padding-left: 2px;
+}
+
+.footer1 .view-display-id-myfooter .views-field-nothing-1 .logo1 {
+font-family: 'Rubik One', sans-serif;
+font-size: 30px;
+}
+
+
+.footer1 .view-display-id-myfooter .views-field-nothing-2 {
+margin-left: 14%;
+}
+
+.footer1 .view-display-id-myfooter .views-field-nothing-3 {
+float: right;
+padding-right: 2px;
+}
+
+
+/* maintenance */
+
+
+.maintenance {
+background-color: black;
+text-align: center;
+color: white;
+}
+
+.maintenance .header1 {
+width:100%;
+}
+
+
+.maintenance .line1 {
+font-family: "rubik one";
+font-size: 40px;
+margin: 30px 0;
+}
+
+
